@@ -1,12 +1,14 @@
 // import Image from 'next/image
 import Head from '@/components/Head'
-import WorkInProgress from '@/templates/WorkInProgress'
+import Header from '@/patterns/Header'
+import MaintanceContent from '@/templates/MaintanceContent'
 
 function Home() {
   return (
     <>
-      <Head title="Pedro Feitosa - Portfólio" />
-      <WorkInProgress />
+      <Head title="Nappanautas - Início" />
+      <Header />
+      <MaintanceContent />
     </>
   )
 }

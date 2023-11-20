@@ -34,11 +34,18 @@ const GlobalStyle = createGlobalStyle`
   html {
     scroll-behavior: smooth;
     font-size: 100%;
-    color: ${(props) => props.theme.colors.main1};
+    color: ${(props) => props.theme.colors.white};
   }
 
   body, input, button, ::placeholder {
     font-family: inherit;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
   }
 
   a {

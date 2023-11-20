@@ -1,18 +1,21 @@
 const theme = {
   colors: {
-    background: '#15121e',
-    main1: '#d5d3d7',
-    main2: '#aba7af',
-    main3: '#807a87',
-    main4: '#564e5f',
-    main5: '#2F2833',
-    main6: '#0A090F',
+    background: '#EAEAEA',
+    gray1: '#D1D1D1',
+    gray2: '#AEAEAE',
+    gray3: '#585858',
+    gray4: '#202020',
     white: '#FFFFFF',
     black: '#000000',
-    primary: '#C72B6E',
-    primaryDarker: '#72193f',
-    secondary: '#04B4E8',
-    secondaryDarker: '#037293'
+    primary: '#14A6D7',
+    primaryLighter: '#4DD2FF',
+    primaryDarker: '#0B7FA6',
+    secondary: '#5F0AB8',
+    secondaryLighter: '#854CFF',
+    secondaryDarker: '#3C0773',
+    tertiary: '#DA3989',
+    tertiaryLighter: '#FFB9D1',
+    tertiaryDarker: '#B70A6B'
   },
   fontSize: {
     px8: '.5rem',
@@ -43,7 +46,13 @@ const theme = {
     hor20px: '0 20px',
     ver20px: '20px 0'
   },
-  boxShadow: '0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06)',
+  shadows: {
+    contentBox: 'box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.25)',
+    innerGray:
+      '0px 2px 4px 0px rgba(0, 0, 0, 0.25) inset, 0px 1px 0px 0px #FFF',
+    innerPrimary:
+      '0px 1px 0px 0px #4DD2FF, 0px 2px 4px 0px rgba(0, 0, 0, 0.25) inset'
+  },
   transition: '0.3s',
   screen: {
     width425: '425px',

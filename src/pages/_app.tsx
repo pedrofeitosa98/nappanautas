@@ -1,5 +1,5 @@
 import type { AppProps } from 'next/app'
-import { Source_Sans_3 } from 'next/font/google'
+import { Nunito } from 'next/font/google'
 import { StrictMode } from 'react'
 import { ToastContainer } from 'react-toastify'
 import { ThemeProvider } from 'styled-components'
@@ -11,7 +11,7 @@ import GlobalStyle from '../styles/global'
 import theme from '../styles/theme'
 import GlobalTypography from '../styles/typography'
 
-const font = Source_Sans_3({ subsets: ['latin'] })
+const font = Nunito({ subsets: ['latin'] })
 
 export default function App({ Component, pageProps }: AppProps) {
   return (

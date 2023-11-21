@@ -47,13 +47,13 @@ const theme = {
     ver20px: '20px 0'
   },
   shadows: {
-    contentBox: 'box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.25)',
+    contentBox: '0px 3px 0px 0px rgba(0, 0, 0, 0.25)',
     innerGray:
       '0px 2px 4px 0px rgba(0, 0, 0, 0.25) inset, 0px 1px 0px 0px #FFF',
     innerPrimary:
       '0px 1px 0px 0px #4DD2FF, 0px 2px 4px 0px rgba(0, 0, 0, 0.25) inset'
   },
-  transition: '0.3s',
+  transition: '0.2s ease-in-out',
   screen: {
     width425: '425px',
     width768: '768px',

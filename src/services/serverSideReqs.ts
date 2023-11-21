@@ -1,6 +1,6 @@
 import { GetServerSidePropsContext } from 'next'
 import radioAPI from './radioAPI'
-import { IRadioData } from '@/types/IRadioData'
+import { IRadioData } from '@/types/RadioData'
 
 export async function getServerSideRadioData(ctx: GetServerSidePropsContext) {
   const api = radioAPI(ctx)

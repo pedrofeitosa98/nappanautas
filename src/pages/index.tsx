@@ -2,7 +2,6 @@
 import Head from '@/components/Head'
 import Header from '@/patterns/Header'
 import radioAPI from '@/services/radioAPI'
-import { getServerSideRadioData } from '@/services/serverSideReqs'
 import MaintanceContent from '@/templates/MaintanceContent'
 import { GetServerSidePropsContext } from 'next'
 

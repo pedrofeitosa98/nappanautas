@@ -1,11 +1,11 @@
+import { useContext } from 'react'
 import { PlayerActionsStyle } from './style'
 import { FaPause, FaPlay } from 'react-icons/fa6'
+import { StreamContext } from '@/context/Stream'
 
-interface IPlayerActionsProps {
-  toggleAudio: (action: 'play' | 'pause') => void
-}
+export default function PlayerActions() {
+  const { toggleAudio } = useContext(StreamContext)
 
-export default function PlayerActions({ toggleAudio }: IPlayerActionsProps) {
   return (
     <PlayerActionsStyle>
       <button

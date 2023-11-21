@@ -16,8 +16,8 @@ module.exports = {
   },
   compiler: {
     styledComponents: true,
-    removeConsole: {
-      exclude: ['error']
-    }
+    // removeConsole: {
+    //   exclude: ['error']
+    // }
   }
 }

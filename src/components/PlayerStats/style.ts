@@ -45,5 +45,7 @@ export const PlayerStatsStyle = styled.div`
 
     font-size: ${({ theme }) => theme.fontSize.px28};
     font-weight: 700;
+    color: ${({ theme }) => theme.colors.white};
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.15);
   }
 `

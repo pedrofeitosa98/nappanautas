@@ -1,6 +1,11 @@
+import { useContext } from 'react'
+import { StreamContext } from '@/context/Stream'
 import { PlayerStatsStyle } from './style'
 
 export default function PlayerStats() {
+  const { streamInfos, loadingListeners, getRadioData } =
+    useContext(StreamContext)
+
   return (
     <PlayerStatsStyle>
       <div className="stats">
@@ -11,9 +16,9 @@ export default function PlayerStats() {
           Com a programação <span>Jukebox AutoDJ</span>
         </p>
       </div>
-      <div className="listeners">
-        <p>43</p>
-      </div>
+      <button type="button" className="listeners" onClick={getRadioData}>
+        {loadingListeners ? '...' : streamInfos?.listeners}
+      </button>
     </PlayerStatsStyle>
   )
 }

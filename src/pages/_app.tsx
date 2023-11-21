@@ -10,6 +10,7 @@ import GlobalAnimations from '../styles/animations'
 import GlobalStyle from '../styles/global'
 import theme from '../styles/theme'
 import GlobalTypography from '../styles/typography'
+import UnifiedProviders from '@/context/unifiedProviders'
 
 const font = Nunito({ subsets: ['latin'] })
 
@@ -22,14 +23,16 @@ export default function App({ Component, pageProps }: AppProps) {
         pauseOnHover={true}
         theme={'light'}
       />
-      <ThemeProvider theme={theme}>
-        <main className={font.className}>
-          <Component {...pageProps} />
-        </main>
-        <GlobalStyle />
-        <GlobalTypography />
-        <GlobalAnimations />
-      </ThemeProvider>
+      <UnifiedProviders>
+        <ThemeProvider theme={theme}>
+          <main className={font.className}>
+            <Component {...pageProps} />
+          </main>
+          <GlobalStyle />
+          <GlobalTypography />
+          <GlobalAnimations />
+        </ThemeProvider>
+      </UnifiedProviders>
     </StrictMode>
   )
 }

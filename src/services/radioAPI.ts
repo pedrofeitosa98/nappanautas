@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 // Chamadas pelo lado server com SSR
-const radioAPI = (ctx?: any) => {
+const api = (ctx?: any) => {
   // const { ['laravel_session']: token } = parseCookies(ctx)
 
   const api = axios.create({
@@ -16,5 +16,7 @@ const radioAPI = (ctx?: any) => {
 
   return api
 }
+
+const radioAPI = api()
 
 export default radioAPI

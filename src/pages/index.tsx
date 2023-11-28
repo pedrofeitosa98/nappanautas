@@ -1,5 +1,6 @@
 // import Image from 'next/image
 import Head from '@/components/Head'
+import Footer from '@/patterns/Footer'
 import Header from '@/patterns/Header'
 import radioAPI from '@/services/radioAPI'
 import MaintanceContent from '@/templates/MaintanceContent'
@@ -33,6 +34,7 @@ export default function Home() {
       <Head title="Nappanautas - Início" />
       <Header />
       <MaintanceContent />
+      <Footer />
     </>
   )
 }

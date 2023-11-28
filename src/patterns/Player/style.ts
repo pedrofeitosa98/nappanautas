@@ -4,7 +4,7 @@ export const PlayerStyle = styled.div`
   display: flex;
   align-items: center;
 
-  width: 560px;
+  width: 100%;
   gap: 10px;
   padding: 10px;
 

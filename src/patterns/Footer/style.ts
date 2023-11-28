@@ -30,13 +30,25 @@ export const FooterStyle = styled.footer`
   .footer-text {
     display: flex;
     flex-direction: column;
-    gap: 6px;
 
-    font-size: ${({ theme }) => theme.fontSize.px14};
+    font-size: ${({ theme }) => theme.fontSize.px12};
+    font-weight: 500;
     color: ${({ theme }) => theme.colors.gray3};
 
-    & > div:first-child * {
+    & > div * {
       display: inline;
+    }
+
+    & svg {
+      width: 12px;
+      height: 12px;
+      margin-left: 2px;
+      padding-top: 2px;
+      fill: ${({ theme }) => theme.colors.primaryDarker};
+    }
+
+    & > div:last-child > p:first-child svg {
+      fill: ${({ theme }) => theme.colors.tertiaryDarker};
     }
   }
 `

@@ -1,12 +1,14 @@
-import Footer from '@/patterns/Footer'
-import { MaintanceContentStyle } from './style'
 import Player from '@/patterns/Player'
+import MaintanceArticle from '@/patterns/MaintanceArticle'
+import { MaintanceContentStyle } from './style'
 
 export default function MaintanceContent() {
   return (
     <MaintanceContentStyle>
-      <Player />
-      <Footer />
+      <section className="left-coulumn">
+        <Player />
+        <MaintanceArticle />
+      </section>
     </MaintanceContentStyle>
   )
 }

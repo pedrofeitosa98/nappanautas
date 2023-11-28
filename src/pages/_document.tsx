@@ -5,6 +5,10 @@ export default function Document() {
     <Html lang="pt-BR">
       <Head>
         <link rel="icon" href="/images/favicon.png" />
+        <meta
+          name="description"
+          content="Nappanautas é um fã-site e primeia rádio do Nappa Hotel. Procuramos proporcionar diversão através de programações diversas e interações diretas com vocês jogadores e ouvintes, além de - é claro - muita música!"
+        />
       </Head>
       <body>
         <Main />

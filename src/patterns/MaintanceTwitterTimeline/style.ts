@@ -10,6 +10,8 @@ export const MaintanceTwitterTimelineStyle = styled.article`
   border: 4px solid ${({ theme }) => theme.colors.gray3};
   border-radius: ${({ theme }) => theme.borderRadius.medium};
 
+  overflow: hidden;
+
   color: ${({ theme }) => theme.colors.white};
   font-size: ${({ theme }) => theme.fontSize.px14};
 

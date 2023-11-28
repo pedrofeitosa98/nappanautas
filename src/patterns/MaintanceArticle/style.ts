@@ -22,7 +22,7 @@ export const MaintanceArticleStyle = styled.article`
     flex-direction: column;
     justify-content: space-between;
 
-    height: 100%;
+    height: 150px;
   }
 
   & .title {

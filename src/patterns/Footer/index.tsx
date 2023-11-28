@@ -17,11 +17,15 @@ export default function Footer() {
           <p> e não possui envolvimento com a Sulake Oy.</p>
         </div>
         <div>
+          <p>Algumas imagens utilizadas são de propriedades da Sulake Oy.</p>
+        </div>
+        <div>
           <p>
-            <FaCode /> Codado por <strong>Motivo</strong>
+            <FaCode /> <strong>Motivo</strong> (Pedro Feitosa) |
           </p>
           <p>
-            <FaPaintbrush /> Desenhado por <strong>Diael</strong>
+            {' '}
+            <FaPaintbrush /> <strong>Diael</strong> (Diogo Allemonge).
           </p>
         </div>
       </div>

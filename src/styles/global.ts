@@ -28,13 +28,13 @@ const GlobalStyle = createGlobalStyle`
     max-width: 100vw;
     overflow-x: hidden;
     overflow-y: auto;
-    background-color: ${(props) => props.theme.colors.background};
+    background-color: ${({ theme }) => theme.colors.background};
   }
 
   html {
     scroll-behavior: smooth;
     font-size: 100%;
-    color: ${(props) => props.theme.colors.white};
+    color: ${({ theme }) => theme.colors.white};
   }
 
   body, input, button, ::placeholder {
@@ -57,6 +57,20 @@ const GlobalStyle = createGlobalStyle`
     cursor: pointer;
     
     text-decoration: none;
+
+    color: ${({ theme }) => theme.colors.secondary};
+    font-weight: 700;
+    transition: ${({ theme }) => theme.transition};
+  }
+
+  a:visited {
+    color: ${({ theme }) => theme.colors.secondary};
+  }
+
+  
+  a:hover {
+    color: ${({ theme }) => theme.colors.secondaryLighter};
+    text-decoration: underline;
   }
 
   button {
@@ -84,7 +98,7 @@ const GlobalStyle = createGlobalStyle`
   /* Firefox */
   /* * {
     scrollbar-width: auto;
-    scrollbar-color: ${(props) => props.theme.colors.primary} ${(props) =>
+    scrollbar-color: ${({ theme }) => theme.colors.primary} ${(props) =>
       props.theme.colors.background};
   } */
 
@@ -94,14 +108,14 @@ const GlobalStyle = createGlobalStyle`
   }
 
   *::-webkit-scrollbar-track {
-    background: ${(props) => props.theme.colors.background};
+    background: ${({ theme }) => theme.colors.background};
     border-radius: 20px;
   }
 
   *::-webkit-scrollbar-thumb {
-    background-color: ${(props) => props.theme.colors.primary};
+    background-color: ${({ theme }) => theme.colors.primary};
     border-radius: 20px;
-    border: 3px solid ${(props) => props.theme.colors.background};
+    border: 3px solid ${({ theme }) => theme.colors.background};
   } */
 `
 export default GlobalStyle

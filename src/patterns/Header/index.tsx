@@ -4,9 +4,7 @@ import { HeaderContainer } from './style'
 export default function Header() {
   return (
     <HeaderContainer>
-      <div className="logo-container">
-        <img src="/images/logo.png" alt="Logo Nappanautas" />
-      </div>
+      <div className="logo-container"></div>
       <WaveAnimation />
     </HeaderContainer>
   )

@@ -1,3 +1,4 @@
+import { VLine } from '@/components/VLine/style'
 import styled from 'styled-components'
 
 export const FooterStyle = styled.footer`
@@ -57,6 +58,24 @@ export const FooterStyle = styled.footer`
 
     .nappafs-stamp {
       height: 94px;
+    }
+  }
+
+  @media (max-width: 580px) {
+    .nappafs-stamp {
+      display: none;
+    }
+
+    ${VLine} {
+      display: none;
+    }
+
+    & .footer-text > div:nth-child(2) {
+      display: none;
+    }
+
+    & .footer-text > div:last-child > p {
+      display: block;
     }
   }
 `

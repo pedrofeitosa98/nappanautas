@@ -32,4 +32,23 @@ export const MaintanceContentStyle = styled.div`
       gap: 10px;
     }
   }
+
+  @media (max-width: 940px) {
+    flex-direction: column;
+    padding: 40px 0;
+
+    & > div {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 580px) {
+    & > div {
+      width: 90vw;
+
+      & .left-coulumn {
+        width: inherit;
+      }
+    }
+  }
 `

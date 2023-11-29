@@ -46,4 +46,17 @@ export const MaintanceArticleStyle = styled.article`
   @media (max-width: 1366px) {
     padding: 20px;
   }
+
+  @media (max-width: 580px) {
+    width: inherit;
+
+    & .text-container {
+      height: auto;
+      gap: 10px;
+    }
+
+    & .image-content {
+      display: none;
+    }
+  }
 `

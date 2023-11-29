@@ -51,4 +51,12 @@ export const FooterStyle = styled.footer`
       fill: ${({ theme }) => theme.colors.tertiaryDarker};
     }
   }
+
+  @media (max-width: 1366px) {
+    padding: 10px;
+
+    .nappafs-stamp {
+      height: 94px;
+    }
+  }
 `

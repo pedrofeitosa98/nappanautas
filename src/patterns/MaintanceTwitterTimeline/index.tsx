@@ -8,7 +8,7 @@ export default function MaintanceTwitterTimeline() {
         sourceType="profile"
         screenName="nappanautas"
         options={{
-          height: 358,
+          height: 298,
           width: 338
           // borderRadius: 12
         }}

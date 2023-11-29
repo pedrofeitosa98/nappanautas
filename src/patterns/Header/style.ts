@@ -20,4 +20,9 @@ export const HeaderContainer = styled.header`
     position: absolute;
     z-index: 2;
   }
+
+  @media (max-width: 1366px) {
+    height: auto;
+    margin-top: 25px;
+  }
 `

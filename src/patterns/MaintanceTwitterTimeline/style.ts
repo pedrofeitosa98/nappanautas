@@ -6,7 +6,7 @@ export const MaintanceTwitterTimelineStyle = styled.article`
   justify-content: center;
 
   width: 350px;
-  height: 371.5px;
+  height: 311.5px;
   border: 4px solid ${({ theme }) => theme.colors.gray3};
   border-radius: ${({ theme }) => theme.borderRadius.medium};
 

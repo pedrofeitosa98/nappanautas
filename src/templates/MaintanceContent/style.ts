@@ -26,4 +26,10 @@ export const MaintanceContentStyle = styled.div`
       gap: inherit;
     }
   }
+
+  @media (max-width: 1366px) {
+    & > div {
+      gap: 10px;
+    }
+  }
 `

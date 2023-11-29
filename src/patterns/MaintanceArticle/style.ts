@@ -42,4 +42,8 @@ export const MaintanceArticleStyle = styled.article`
     background: url('/images/article-welcome-image.png') no-repeat center;
     background-position: -50px -215px;
   }
+
+  @media (max-width: 1366px) {
+    padding: 20px;
+  }
 `

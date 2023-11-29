@@ -46,4 +46,21 @@ export const PlayerActionsStyle = styled.div`
   .play:hover {
     background: ${({ theme }) => theme.colors.tertiaryDarker};
   }
+
+  @media (max-width: 580px) {
+    width: 100%;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    & button {
+      position: static;
+      flex-grow: 1;
+      border-radius: ${({ theme }) => theme.borderRadius.small};
+    }
+  }
 `

@@ -5,20 +5,36 @@ export default function MaintanceTwitterTimeline() {
   return (
     <MaintanceTwitterTimelineStyle>
       <TwitterTimelineEmbed
+        lang="pt"
         sourceType="profile"
         screenName="nappanautas"
         options={{
-          height: 298,
           width: 338
           // borderRadius: 12
         }}
+        autoHeight
         theme="dark"
         borderColor="#202020"
-        noHeader
+        // noHeader
         noBorders
         noScrollbar
         transparent
-        placeholder="Carregando Tweets..."
+      />
+      <TwitterTimelineEmbed
+        lang="pt"
+        sourceType="profile"
+        screenName="nappanautas"
+        options={{
+          width: 580
+          // borderRadius: 12
+        }}
+        autoHeight
+        theme="dark"
+        borderColor="#202020"
+        // noHeader
+        noBorders
+        noScrollbar
+        transparent
       />
     </MaintanceTwitterTimelineStyle>
   )

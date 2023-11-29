@@ -1,3 +1,5 @@
+import { PlayerDJStyle } from '@/components/PlayerDJ/style'
+import { VLine } from '@/components/VLine/style'
 import styled from 'styled-components'
 
 export const PlayerStyle = styled.div`
@@ -15,5 +17,16 @@ export const PlayerStyle = styled.div`
 
   #true_player {
     display: none;
+  }
+
+  @media (max-width: 580px) {
+    flex-direction: column;
+
+    width: 90vw;
+
+    ${VLine},
+    ${PlayerDJStyle} {
+      display: none;
+    }
   }
 `

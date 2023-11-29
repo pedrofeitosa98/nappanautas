@@ -4,6 +4,7 @@ import { css } from 'styled-components'
 interface IVLineProps {
   color: 'primary' | 'secondary' | 'gray'
   height: string
+  flip90?: boolean
 }
 
 function colorPalette({ color }: { color: 'primary' | 'secondary' | 'gray' }) {

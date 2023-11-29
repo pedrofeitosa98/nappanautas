@@ -48,4 +48,31 @@ export const PlayerStatsStyle = styled.div`
     color: ${({ theme }) => theme.colors.white};
     text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.15);
   }
+
+  @media (max-width: 580px) {
+    flex-direction: column;
+    flex-grow: 0;
+    width: 100%;
+
+    .stats {
+      flex-grow: 0;
+      width: 100%;
+      gap: 10px;
+
+      p {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+      }
+
+      p:nth-child(2) {
+        padding-left: 0px;
+      }
+    }
+
+    .listeners {
+      width: 100%;
+    }
+  }
 `

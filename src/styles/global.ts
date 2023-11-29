@@ -94,16 +94,28 @@ const GlobalStyle = createGlobalStyle`
     font-size: .875rem;
   }
 
+  @media (max-width: 940px) {
+    main {
+      height: auto;
+    }
+  }
+
+  @media (max-width: 580px) {
+    main {
+      min-height: 100vh;
+    }
+  }
+
   /* ===== Scrollbar CSS ===== */
   /* Firefox */
-  /* * {
+  * {
     scrollbar-width: auto;
     scrollbar-color: ${({ theme }) => theme.colors.primary} ${(props) =>
       props.theme.colors.background};
-  } */
+  }
 
   /* Chrome, Edge, and Safari */
-  /* *::-webkit-scrollbar {
+  *::-webkit-scrollbar {
     width: 12px;
   }
 
@@ -116,6 +128,6 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${({ theme }) => theme.colors.primary};
     border-radius: 20px;
     border: 3px solid ${({ theme }) => theme.colors.background};
-  } */
+  }
 `
 export default GlobalStyle

@@ -1,6 +1,6 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
-export const PlayerStatsStyle = styled.div`
+export const PlayerStatsStyle = styled.div<{ loadingPlayerData: boolean }>`
   display: flex;
   gap: 10px;
   flex-grow: 1;
@@ -14,21 +14,25 @@ export const PlayerStatsStyle = styled.div`
     justify-content: center;
     flex-grow: 1;
 
-    p {
+    .dj,
+    .show {
       display: flex;
       align-items: center;
 
       gap: 4px;
       font-size: ${({ theme }) => theme.fontSize.px12};
+
+      transition: ${({ theme }) => theme.transition};
     }
 
-    p:nth-child(2) {
+    .show {
       padding-left: 10px;
     }
 
     span {
       font-size: ${({ theme }) => theme.fontSize.px18};
       font-weight: 700;
+      cursor: pointer;
     }
   }
 
@@ -47,7 +51,19 @@ export const PlayerStatsStyle = styled.div`
     font-weight: 700;
     color: ${({ theme }) => theme.colors.white};
     text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.15);
+
+    transition: ${({ theme }) => theme.transition};
   }
+
+  ${({ loadingPlayerData }) =>
+    loadingPlayerData &&
+    css`
+      span,
+      button {
+        opacity: 0.5;
+        pointer-events: none;
+      }
+    `}
 
   @media (max-width: 580px) {
     flex-direction: column;
@@ -59,14 +75,15 @@ export const PlayerStatsStyle = styled.div`
       width: 100%;
       gap: 10px;
 
-      p {
+      .dj,
+      .show {
         width: 100%;
         display: flex;
         flex-direction: column;
         gap: 0px;
       }
 
-      p:nth-child(2) {
+      .show {
         padding-left: 0px;
       }
     }

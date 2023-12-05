@@ -21,7 +21,6 @@ export const FooterStyle = styled.footer`
     height: 104px;
     padding: 20px 10px;
 
-    background: url('/images/nappafs.png') no-repeat center;
     background-color: ${({ theme }) => theme.colors.gray2};
 
     border-radius: ${({ theme }) => theme.borderRadius.medium};

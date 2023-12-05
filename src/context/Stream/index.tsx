@@ -10,7 +10,7 @@ import {
 export const StreamContext = createContext<IStreamContext>({} as IStreamContext)
 
 export function StreamProvider({ children }: IStreamProviderProps) {
-  const [loadingListeners, setLoadingListeners] = useState(true)
+  const [loadingPlayerData, setLoadingPlayerData] = useState(true)
   const [streamInfos, setStreamInfos] = useState<IStreamInfos | null>(null)
   const [playerRef, setPlayerRef] = useState<HTMLAudioElement | null>(null)
 
@@ -35,21 +35,33 @@ export function StreamProvider({ children }: IStreamProviderProps) {
 
   const getRadioData = async () => {
     try {
-      setLoadingListeners(true)
       // const { data } = await radioAPI().get(':7017/statistics?json=1')
       const response = await radioAPI.get('/cp/get_info.php?p=8034')
       setStreamInfos(response.data)
     } catch (error) {
       console.log(error)
     } finally {
-      setLoadingListeners(false)
+      setLoadingPlayerData(false)
+    }
+  }
+
+  const updateRadioData = async () => {
+    try {
+      setLoadingPlayerData(true)
+      // const { data } = await radioAPI().get(':7017/statistics?json=1')
+      const response = await radioAPI.get('/cp/get_info.php?p=8034')
+      setStreamInfos(response.data)
+    } catch (error) {
+      console.log(error)
+    } finally {
+      setLoadingPlayerData(false)
     }
   }
 
   useEffect(() => {
     getRadioData()
 
-    const interval = setInterval(() => getRadioData(), 60 * 1000)
+    const interval = setInterval(() => getRadioData(), 10 * 1000)
     return () => {
       clearInterval(interval)
     }
@@ -60,8 +72,8 @@ export function StreamProvider({ children }: IStreamProviderProps) {
       value={{
         streamInfos,
         toggleAudio,
-        loadingListeners,
-        getRadioData
+        loadingPlayerData,
+        updateRadioData
       }}
     >
       {children}

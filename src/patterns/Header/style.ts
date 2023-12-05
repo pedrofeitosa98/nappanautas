@@ -11,8 +11,6 @@ export const HeaderContainer = styled.header`
     margin: 0 auto;
     width: 210px;
     height: 114px;
-
-    background: url('/images/logo.png') no-repeat center;
     z-index: 2;
   }
 

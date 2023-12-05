@@ -5,7 +5,15 @@ import { FaCode, FaHeart, FaPaintbrush } from 'react-icons/fa6'
 export default function Footer() {
   return (
     <FooterStyle>
-      <div className="nappafs-stamp"></div>
+      <div className="nappafs-stamp">
+        <img
+          src="/images/nappafs.png"
+          alt="Selo de fã-site do Nappa Hotel"
+          width={123}
+          height={64}
+          draggable="false"
+        />
+      </div>
       <VLine color="gray" height="60px" />
       <div className="footer-text">
         <div>

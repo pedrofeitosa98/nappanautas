@@ -1,5 +1,9 @@
-import styled from 'styled-components'
-import { IPlayerDJProps } from '.'
+import styled, { css } from 'styled-components'
+
+export interface IPlayerDJProps {
+  avatarurl: string
+  loadingPlayerData: boolean
+}
 
 export const PlayerDJStyle = styled.div<IPlayerDJProps>`
   position: relative;
@@ -30,5 +34,16 @@ export const PlayerDJStyle = styled.div<IPlayerDJProps>`
     height: 90px;
 
     background: url(${({ avatarurl }) => avatarurl});
+
+    transition: ${({ theme }) => theme.transition};
   }
+
+  ${({ loadingPlayerData }) =>
+    loadingPlayerData &&
+    css`
+      .avatar-img {
+        opacity: 0.5;
+        pointer-events: none;
+      }
+    `}
 `

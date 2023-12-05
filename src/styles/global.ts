@@ -41,11 +41,12 @@ const GlobalStyle = createGlobalStyle`
     font-family: inherit;
   }
 
-  main {
+  #__next > main {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
+    height: 100dvh;
   }
 
   a {
@@ -95,14 +96,15 @@ const GlobalStyle = createGlobalStyle`
   }
 
   @media (max-width: 940px) {
-    main {
+    #__next > main {
       height: auto;
     }
   }
 
   @media (max-width: 580px) {
-    main {
+    #__next > main {
       min-height: 100vh;
+      min-height: 100dvh;
     }
   }
 

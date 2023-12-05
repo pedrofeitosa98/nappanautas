@@ -14,7 +14,7 @@ export default function Player() {
         />
       </audio>
 
-      <PlayerDJ avatarurl="/images/avatar-autodj.png" />
+      <PlayerDJ />
       <VLine color="primary" height="50px" />
       <PlayerStats />
       <VLine color="primary" height="50px" />

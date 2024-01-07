@@ -1,7 +1,7 @@
-# Portfolio
+# Nappanautas
 
-Hey, olá! Te dou boas vindas ao repositório do meu Portfólio :)  
-Este projeto está sendo desenvolvido a partir do meu template próprio que você pode conferir [clicando aqui](https://github.com/pedrofeitosa98/pedrinho-next-template).
+Este é o repositório oficial do nosso projeto de fã-site para o [Nappa Hotel](https://nappahotel.com/).
+Este projeto está sendo desenvolvido de forma independente e como um hobby/projeto pessoal, então ele pode caminhar mais lento do que o esperado.
 
 ## 🧱 Ferramentas e Bibliotecas
 
@@ -9,15 +9,11 @@ Este projeto está sendo desenvolvido a partir do meu template próprio que voc�
 * ✨ **Prettier**
 * 🌐 **Axios**
 * 💅 **Styled Components**
-* 📑 **React Hook Form + Yup**
-* 🎨 **React Icons**
-* 🍞 **React Toastify**
-* ⌛ **Moment JS**
 
 ## 🚀 Planejamento futuro
 
-* [x] Implementar página Em Progresso/Manutenção
-* [ ] Implementar página Home
-* [ ] Adicionar seção Sobre Mim
-* [ ] Adicionar seção com tecnologias
-* [ ] Adicionar seção com principais projetos
+* [x] Implementar lading page
+* [x] Desenho da versão inicial do blog
+* [ ] Deploy de uma versão mockup do blog
+* [ ] Criação de um sistema de login
+* [ ] Criação de um sistema de notícias
